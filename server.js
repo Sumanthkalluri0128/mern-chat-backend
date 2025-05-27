@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: ["http://127.0.0.1:5173"],
+    origin: ["https://mern-chat-frontend.netlify.app/"],
     method: ["GET", "POST"],
     Credentials: true,
   },
